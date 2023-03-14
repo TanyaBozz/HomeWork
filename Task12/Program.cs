@@ -12,6 +12,9 @@ Console.Write("Введите второе целое положительное
 int number2 = Convert.ToInt32(Console.ReadLine());
 
 int remainderDivision = RemainderDivision(number1, number2);
+
+// Console.WriteLine(remainderDivision == 0 ? "кратно" : $"не кратно, остаток {remainderDivision}")
+
 if (remainderDivision != 0)
 {
     Console.WriteLine($"{number1}, {number2} -> не кратно, остаток {remainderDivision}");
