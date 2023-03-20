@@ -15,7 +15,10 @@ int Factorial(int num)
     int prod = 1;
     for (int i = 2; i <= num; i++)
     {
-        prod *= i;    //prod = prod * i;
+        checked
+        {
+            prod *= i;    //prod = prod * i;
+        }
     }
     return prod;
 }
