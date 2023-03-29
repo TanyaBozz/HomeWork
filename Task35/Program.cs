@@ -12,19 +12,6 @@ PrintArray(arr);
 int count = CountElements(arr, 10, 99);
 Console.WriteLine($" -> {count}");
 
-int CountElements(int[] array, int min, int max)
-{
-    int count = 0;
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] >= min && array[i] <= max)
-        {
-            count++;
-        }
-    }
-    return count;
-}
-
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
@@ -46,4 +33,17 @@ void PrintArray(int[] arr)
         else Console.Write($"{arr[i]}");
     }
     Console.Write("]");
+}
+
+int CountElements(int[] array, int min, int max)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] >= min && array[i] <= max)
+        {
+            count++;
+        }
+    }
+    return count;
 }
