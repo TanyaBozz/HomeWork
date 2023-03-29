@@ -2,7 +2,7 @@
 // Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-int[] arr = CreateArrayRndInt(10, 100, 1000);
+int[] arr = CreateArrayRndInt(15, 100, 1000);
 int count = CountEvenNum(arr);
 
 PrintArray(arr);
@@ -15,7 +15,7 @@ int[] CreateArrayRndInt(int size, int min, int max)
 
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rnd.Next(min, max + 1);
+        arr[i] = rnd.Next(min, max);
     }
     return arr;
 }
