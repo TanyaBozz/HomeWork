@@ -22,7 +22,6 @@ else
 int[] FibArray(int num)
 {
     int[] array = new int[num];
-    array[0] = 0;
     array[1] = 1;
     for (int i = 2; i < num; i++)
     {
